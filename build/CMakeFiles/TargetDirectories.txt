@@ -1,0 +1,4 @@
+/home/leonuraht/cr/gl/nes/build/CMakeFiles/glad.dir
+/home/leonuraht/cr/gl/nes/build/CMakeFiles/app.dir
+/home/leonuraht/cr/gl/nes/build/CMakeFiles/edit_cache.dir
+/home/leonuraht/cr/gl/nes/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/leonuraht/cr/gl/nes/build",
+  "command": "/usr/sbin/cc  -I/home/leonuraht/cr/gl/nes/include -w -o CMakeFiles/glad.dir/src/glad.c.o -c /home/leonuraht/cr/gl/nes/src/glad.c",
+  "file": "/home/leonuraht/cr/gl/nes/src/glad.c",
+  "output": "CMakeFiles/glad.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/leonuraht/cr/gl/nes/build",
+  "command": "/usr/sbin/c++  -I/home/leonuraht/cr/gl/nes/include -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles/app.dir/src/initgl.cpp.o -c /home/leonuraht/cr/gl/nes/src/initgl.cpp",
+  "file": "/home/leonuraht/cr/gl/nes/src/initgl.cpp",
+  "output": "CMakeFiles/app.dir/src/initgl.cpp.o"
+},
+{
+  "directory": "/home/leonuraht/cr/gl/nes/build",
+  "command": "/usr/sbin/c++  -I/home/leonuraht/cr/gl/nes/include -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles/app.dir/src/main.cpp.o -c /home/leonuraht/cr/gl/nes/src/main.cpp",
+  "file": "/home/leonuraht/cr/gl/nes/src/main.cpp",
+  "output": "CMakeFiles/app.dir/src/main.cpp.o"
+}
+]
