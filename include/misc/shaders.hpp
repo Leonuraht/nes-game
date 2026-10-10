@@ -12,22 +12,26 @@
  *
  */
 
-char *readfile(char *file_name);
+char *readfile(const char *file_name);
 
 typedef enum { Vertex, Fragment, Compute } ShaderType;
 
 class Shader {
 public:
   unsigned int shader;
-  Shader(char *filename, ShaderType type);
+
+  Shader(const char *filename, ShaderType type);
+  void deletes();
 };
 
 class Program {
 public:
   unsigned int program;
-  Program(char *computepath);
-  Program(char *vertexpath, char *fragmentpath);
-  Program(char *vertexpath, char *fragmentpath, char *computepath);
+
+  Program(const char *computepath);
+  Program(const char *vertexpath, const char *fragmentpath);
+  Program(const char *vertexpath, const char *fragmentpath,
+          const char *computepath);
 };
 
 #endif

@@ -1,4 +1,5 @@
 #include "misc/initgl.hpp"
+#include "misc/shaders.hpp"
 #include <iostream>
 
 const int width = 800;
@@ -16,7 +17,7 @@ int main() {
   GLFWwindow *window =
       glfwCreateWindow(width, height, "_OpenGL_ Game", NULL, NULL);
   if (window == NULL) {
-    std::cout << "ERROR : WINDOW CREATION FAILED\n" << std::endl;
+    std::cout << "ERROR : WINDOW CREATION FAILED" << std::endl;
     glfwTerminate();
     return -1;
   }
@@ -29,16 +30,29 @@ int main() {
   glViewport(0, 0, width, height);
   glfwSetFramebufferSizeCallback(window, resize_callback);
 
+  // Object
   unsigned int VAO, VBO;
   glCreateVertexArrays(1, &VAO);
   glCreateBuffers(1, &VBO);
+  glBindVertexArray(VAO);
+
+  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), NULL);
+  glEnableVertexAttribArray(0);
+
   glBindBuffer(GL_ARRAY_BUFFER, VBO);
   glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
+  // Shader
+  Program program_basic("./src/shaders/vertex_basic.glsl",
+                        "./src/shaders/fragment_basic.glsl");
+
   while (!glfwWindowShouldClose(window)) {
     process_input(window);
+
     glClearColor(0.2f, 0.3f, 0.5f, 1.f);
     glClear(GL_COLOR_BUFFER_BIT);
+    glUseProgram(program_basic.program);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
 
     glfwSwapBuffers(window);
     glfwPollEvents();

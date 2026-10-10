@@ -3,6 +3,8 @@
 #include "stdlib.h"
 #include <iostream>
 
+static const char *Shadertypes[] = {"Vertex", "Fragment", "Compute"};
+
 static long sizeoffile(FILE *file) {
   fseek(file, 0, SEEK_END);
   long val = ftell(file);
@@ -10,16 +12,16 @@ static long sizeoffile(FILE *file) {
   return val;
 }
 
-char *readfile(char *file_name) {
+char *readfile(const char *file_name) {
   FILE *file = fopen(file_name, "r");
   if (file == NULL) {
-    std::cerr << "ERROR : FILE READING FAILED.\n" << std::endl;
+    std::cerr << "ERROR : FILE READING FAILED." << std::endl;
     return NULL;
   }
   size_t filesize = (size_t)sizeoffile(file);
   char *buffer = (char *)malloc(filesize + 1);
   if (buffer == NULL) {
-    std::cerr << "ERROR : FILE BUFFER ALLOCATION FAILED.\n" << std::endl;
+    std::cerr << "ERROR : FILE BUFFER ALLOCATION FAILED." << std::endl;
     fclose(file);
     return NULL;
   }
@@ -33,7 +35,7 @@ char *readfile(char *file_name) {
   return buffer;
 }
 
-Shader::Shader(char *filename, ShaderType type) {
+Shader::Shader(const char *filename, ShaderType type) {
   const char *filedata = (const char *)readfile(filename);
   switch (type) {
   case Vertex:
@@ -55,12 +57,14 @@ Shader::Shader(char *filename, ShaderType type) {
   glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
   if (!success) {
     glGetShaderInfoLog(shader, 512, NULL, infoLog);
-    std::cout << "ERROR : SHADER COMPILATION_FAILED" << type << " " << infoLog
-              << std::endl;
+    std::cout << "ERROR : SHADER COMPILATION_FAILED (" << Shadertypes[type]
+              << ") " << infoLog << std::endl;
   }
 }
 
-Program::Program(char *vertexpath, char *fragmentpath) {
+void Shader::deletes() { glDeleteShader(shader); }
+
+Program::Program(const char *vertexpath, const char *fragmentpath) {
   Shader vertexshader(vertexpath, Vertex);
   Shader fragmentshader(fragmentpath, Fragment);
   program = glCreateProgram();
@@ -74,11 +78,9 @@ Program::Program(char *vertexpath, char *fragmentpath) {
   glGetProgramiv(program, GL_LINK_STATUS, &success);
   if (!success) {
     glGetProgramInfoLog(program, 512, NULL, infoLog);
-    std::cout << "ERROR : PROGRAM COMPILATION_FAILED" << infoLog << std::endl;
+    std::cout << "ERROR : PROGRAM COMPILATION_FAILED\t ::\t " << infoLog
+              << std::endl;
   }
-}
-
-Program::finished() {
-  glDeleteShader(vertexshader.shader);
-  glDeleteShader(fragmentshader.shader);
+  vertexshader.deletes();
+  fragmentshader.deletes();
 }

@@ -14,6 +14,7 @@ CMakeFiles/app.dir/src/main.cpp.o: /home/leonuraht/cr/gl/nes/src/main.cpp \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
+ /home/leonuraht/cr/gl/nes/include/misc/shaders.hpp \
  /usr/include/c++/16/iostream /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \

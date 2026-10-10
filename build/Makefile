@@ -215,6 +215,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/object.o: src/object.cpp.o
+.PHONY : src/object.o
+
+# target to build an object file
+src/object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/object.cpp.o
+.PHONY : src/object.cpp.o
+
+src/object.i: src/object.cpp.i
+.PHONY : src/object.i
+
+# target to preprocess a source file
+src/object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/object.cpp.i
+.PHONY : src/object.cpp.i
+
+src/object.s: src/object.cpp.s
+.PHONY : src/object.s
+
+# target to generate assembly for a file
+src/object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/object.cpp.s
+.PHONY : src/object.cpp.s
+
+src/shaders.o: src/shaders.cpp.o
+.PHONY : src/shaders.o
+
+# target to build an object file
+src/shaders.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/shaders.cpp.o
+.PHONY : src/shaders.cpp.o
+
+src/shaders.i: src/shaders.cpp.i
+.PHONY : src/shaders.i
+
+# target to preprocess a source file
+src/shaders.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/shaders.cpp.i
+.PHONY : src/shaders.cpp.i
+
+src/shaders.s: src/shaders.cpp.s
+.PHONY : src/shaders.s
+
+# target to generate assembly for a file
+src/shaders.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/shaders.cpp.s
+.PHONY : src/shaders.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -234,6 +282,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/object.o"
+	@echo "... src/object.i"
+	@echo "... src/object.s"
+	@echo "... src/shaders.o"
+	@echo "... src/shaders.i"
+	@echo "... src/shaders.s"
 .PHONY : help
 
 

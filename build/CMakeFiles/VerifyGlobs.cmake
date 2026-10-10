@@ -32,6 +32,8 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/leonuraht/cr/gl/nes/src
 set(OLD_GLOB
   "/home/leonuraht/cr/gl/nes/src/initgl.cpp"
   "/home/leonuraht/cr/gl/nes/src/main.cpp"
+  "/home/leonuraht/cr/gl/nes/src/object.cpp"
+  "/home/leonuraht/cr/gl/nes/src/shaders.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

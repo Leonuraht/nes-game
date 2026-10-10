@@ -16,5 +16,17 @@
   "command": "/usr/sbin/c++  -I/home/leonuraht/cr/gl/nes/include -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles/app.dir/src/main.cpp.o -c /home/leonuraht/cr/gl/nes/src/main.cpp",
   "file": "/home/leonuraht/cr/gl/nes/src/main.cpp",
   "output": "CMakeFiles/app.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/leonuraht/cr/gl/nes/build",
+  "command": "/usr/sbin/c++  -I/home/leonuraht/cr/gl/nes/include -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles/app.dir/src/object.cpp.o -c /home/leonuraht/cr/gl/nes/src/object.cpp",
+  "file": "/home/leonuraht/cr/gl/nes/src/object.cpp",
+  "output": "CMakeFiles/app.dir/src/object.cpp.o"
+},
+{
+  "directory": "/home/leonuraht/cr/gl/nes/build",
+  "command": "/usr/sbin/c++  -I/home/leonuraht/cr/gl/nes/include -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles/app.dir/src/shaders.cpp.o -c /home/leonuraht/cr/gl/nes/src/shaders.cpp",
+  "file": "/home/leonuraht/cr/gl/nes/src/shaders.cpp",
+  "output": "CMakeFiles/app.dir/src/shaders.cpp.o"
 }
 ]
