@@ -504,10 +504,6 @@ CMakeFiles/app.dir/src/main.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h
 
-CMakeFiles/app.dir/src/object.cpp.o
- /home/leonuraht/cr/gl/nes/src/object.cpp
- /usr/include/stdc-predef.h
-
 CMakeFiles/app.dir/src/shaders.cpp.o
  /home/leonuraht/cr/gl/nes/src/shaders.cpp
  /home/leonuraht/cr/gl/nes/include/KHR/khrplatform.h

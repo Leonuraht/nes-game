@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/leonuraht/cr/gl/nes/src/initgl.cpp" "CMakeFiles/app.dir/src/initgl.cpp.o" "gcc" "CMakeFiles/app.dir/src/initgl.cpp.o.d"
   "/home/leonuraht/cr/gl/nes/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
-  "/home/leonuraht/cr/gl/nes/src/object.cpp" "CMakeFiles/app.dir/src/object.cpp.o" "gcc" "CMakeFiles/app.dir/src/object.cpp.o.d"
   "/home/leonuraht/cr/gl/nes/src/shaders.cpp" "CMakeFiles/app.dir/src/shaders.cpp.o" "gcc" "CMakeFiles/app.dir/src/shaders.cpp.o.d"
   "" "app" "gcc" "CMakeFiles/app.dir/link.d"
   )

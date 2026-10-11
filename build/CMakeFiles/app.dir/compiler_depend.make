@@ -502,9 +502,6 @@ CMakeFiles/app.dir/src/main.cpp.o: /home/leonuraht/cr/gl/nes/src/main.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h
 
-CMakeFiles/app.dir/src/object.cpp.o: /home/leonuraht/cr/gl/nes/src/object.cpp \
-  /usr/include/stdc-predef.h
-
 CMakeFiles/app.dir/src/shaders.cpp.o: /home/leonuraht/cr/gl/nes/src/shaders.cpp \
   /home/leonuraht/cr/gl/nes/include/KHR/khrplatform.h \
   /home/leonuraht/cr/gl/nes/include/glad/glad.h \
@@ -1106,10 +1103,6 @@ libglad.a:
 
 /usr/include/wchar.h:
 
-/usr/lib/libc.so:
-
-/usr/include/bits/pthreadtypes.h:
-
 /usr/include/bits/select.h:
 
 /home/leonuraht/cr/gl/nes/include/misc/initgl.hpp:
@@ -1374,8 +1367,10 @@ libglad.a:
 
 /home/leonuraht/cr/gl/nes/include/misc/shaders.hpp:
 
-/home/leonuraht/cr/gl/nes/src/object.cpp:
-
 /usr/include/bits/byteswap.h:
 
 /usr/include/c++/16/stdlib.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/lib/libc.so:

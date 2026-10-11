@@ -4,8 +4,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/app.dir/src/initgl.cpp.o.d"
   "CMakeFiles/app.dir/src/main.cpp.o"
   "CMakeFiles/app.dir/src/main.cpp.o.d"
-  "CMakeFiles/app.dir/src/object.cpp.o"
-  "CMakeFiles/app.dir/src/object.cpp.o.d"
   "CMakeFiles/app.dir/src/shaders.cpp.o"
   "CMakeFiles/app.dir/src/shaders.cpp.o.d"
   "app"

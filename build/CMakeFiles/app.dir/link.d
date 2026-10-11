@@ -4,7 +4,6 @@ app: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
   CMakeFiles/app.dir/src/initgl.cpp.o \
   CMakeFiles/app.dir/src/main.cpp.o \
-  CMakeFiles/app.dir/src/object.cpp.o \
   CMakeFiles/app.dir/src/shaders.cpp.o \
   libglad.a \
   /usr/lib/libglfw.so.3.5 \
@@ -63,8 +62,6 @@ app: \
 CMakeFiles/app.dir/src/initgl.cpp.o:
 
 CMakeFiles/app.dir/src/main.cpp.o:
-
-CMakeFiles/app.dir/src/object.cpp.o:
 
 CMakeFiles/app.dir/src/shaders.cpp.o:
 
