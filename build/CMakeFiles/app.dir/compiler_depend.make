@@ -254,6 +254,7 @@ CMakeFiles/app.dir/src/initgl.cpp.o: /home/leonuraht/cr/gl/nes/src/initgl.cpp \
 CMakeFiles/app.dir/src/main.cpp.o: /home/leonuraht/cr/gl/nes/src/main.cpp \
   /home/leonuraht/cr/gl/nes/include/KHR/khrplatform.h \
   /home/leonuraht/cr/gl/nes/include/glad/glad.h \
+  /home/leonuraht/cr/gl/nes/include/misc/cgltf.h \
   /home/leonuraht/cr/gl/nes/include/misc/initgl.hpp \
   /home/leonuraht/cr/gl/nes/include/misc/shaders.hpp \
   /usr/include/GLFW/glfw3.h \
@@ -788,12 +789,9 @@ app: /usr/lib/Scrt1.o \
   /usr/lib32/libxcb.so.1 \
   CMakeFiles/app.dir/src/initgl.cpp.o \
   CMakeFiles/app.dir/src/main.cpp.o \
-  CMakeFiles/app.dir/src/object.cpp.o \
   CMakeFiles/app.dir/src/shaders.cpp.o \
   libglad.a
 
-
-CMakeFiles/app.dir/src/object.cpp.o:
 
 CMakeFiles/app.dir/src/main.cpp.o:
 
@@ -1091,6 +1089,8 @@ CMakeFiles/app.dir/src/shaders.cpp.o:
 
 /usr/include/c++/16/bits/functional_hash.h:
 
+/home/leonuraht/cr/gl/nes/include/misc/cgltf.h:
+
 /usr/include/c++/16/iosfwd:
 
 /usr/include/bits/types/__sigset_t.h:
@@ -1102,6 +1102,10 @@ libglad.a:
 /usr/include/c++/16/cctype:
 
 /usr/include/wchar.h:
+
+/usr/lib/libc.so:
+
+/usr/include/bits/pthreadtypes.h:
 
 /usr/include/bits/select.h:
 
@@ -1370,7 +1374,3 @@ libglad.a:
 /usr/include/bits/byteswap.h:
 
 /usr/include/c++/16/stdlib.h:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/lib/libc.so:

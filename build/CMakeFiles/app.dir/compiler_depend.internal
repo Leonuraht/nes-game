@@ -256,6 +256,7 @@ CMakeFiles/app.dir/src/main.cpp.o
  /home/leonuraht/cr/gl/nes/src/main.cpp
  /home/leonuraht/cr/gl/nes/include/KHR/khrplatform.h
  /home/leonuraht/cr/gl/nes/include/glad/glad.h
+ /home/leonuraht/cr/gl/nes/include/misc/cgltf.h
  /home/leonuraht/cr/gl/nes/include/misc/initgl.hpp
  /home/leonuraht/cr/gl/nes/include/misc/shaders.hpp
  /usr/include/GLFW/glfw3.h
@@ -792,7 +793,6 @@ app
  /usr/lib32/libxcb.so.1
  /home/leonuraht/cr/gl/nes/build/CMakeFiles/app.dir/src/initgl.cpp.o
  /home/leonuraht/cr/gl/nes/build/CMakeFiles/app.dir/src/main.cpp.o
- /home/leonuraht/cr/gl/nes/build/CMakeFiles/app.dir/src/object.cpp.o
  /home/leonuraht/cr/gl/nes/build/CMakeFiles/app.dir/src/shaders.cpp.o
  /home/leonuraht/cr/gl/nes/build/libglad.a
 

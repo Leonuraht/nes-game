@@ -1,7 +1,7 @@
 #ifndef SHADER_HPP
 #define SHADER_HPP
 #include "glad/glad.h"
-#define GLAD_INCLUDE_NONE
+#define GLFW_INCLUDE_NONE
 #include "GLFW/glfw3.h"
 #include <iostream>
 

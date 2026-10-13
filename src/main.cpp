@@ -1,34 +1,23 @@
+#include "misc/cgltf.h"
 #include "misc/initgl.hpp"
 #include "misc/shaders.hpp"
 #include <iostream>
 
-const int width = 800;
-const int height = 600;
-
-float vertices[] = {-0.5f, -0.5f, 0.0f, 0.5f, -0.5f, 0.0f, 0.0f, 0.5f, 0.0f};
+float vertices[] = {
+    -0.5f, 0.5f,  0.0f, // Top-left
+    0.5f,  0.5f,  0.0f, // Top-right
+    0.5f,  -0.5f, 0.0f, // Bottom  right
+    -0.5f, 0.5f,  0.0f, // Top-left
+    0.5f,  -0.5f, 0.0f, // Bottom-right
+    -0.5f, -0.5f, 0.0f  // Bottom left
+};
 
 int main() {
-  glfwInit();
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
-  glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-  glfwSetErrorCallback(error_callback);
 
-  GLFWwindow *window =
-      glfwCreateWindow(width, height, "_OpenGL_ Game", NULL, NULL);
-  if (window == NULL) {
-    std::cout << "ERROR : WINDOW CREATION FAILED" << std::endl;
-    glfwTerminate();
+  GLFWwindow *window;
+  if ((window = initialize()) == NULL) {
     return -1;
   }
-  glfwMakeContextCurrent(window);
-
-  if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-    std::cout << "ERROR : FAILED TO INITIALISE GLAD" << std::endl;
-    return -1;
-  }
-  glViewport(0, 0, width, height);
-  glfwSetFramebufferSizeCallback(window, resize_callback);
 
   // Object
   unsigned int VAO, VBO;
@@ -36,11 +25,11 @@ int main() {
   glCreateBuffers(1, &VBO);
   glBindVertexArray(VAO);
 
-  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), NULL);
-  glEnableVertexAttribArray(0);
-
   glBindBuffer(GL_ARRAY_BUFFER, VBO);
   glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), NULL);
+  glEnableVertexAttribArray(0);
 
   // Shader
   Program program_basic("./src/shaders/vertex_basic.glsl",
@@ -52,7 +41,7 @@ int main() {
     glClearColor(0.2f, 0.3f, 0.5f, 1.f);
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(program_basic.program);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawArrays(GL_TRIANGLES, 0, 6);
 
     glfwSwapBuffers(window);
     glfwPollEvents();

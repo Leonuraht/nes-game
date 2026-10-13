@@ -1,8 +1,7 @@
 CMakeFiles/app.dir/src/main.cpp.o: /home/leonuraht/cr/gl/nes/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/leonuraht/cr/gl/nes/include/misc/initgl.hpp \
- /home/leonuraht/cr/gl/nes/include/glad/glad.h \
- /home/leonuraht/cr/gl/nes/include/KHR/khrplatform.h \
+ /home/leonuraht/cr/gl/nes/include/misc/cgltf.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -12,8 +11,11 @@ CMakeFiles/app.dir/src/main.cpp.o: /home/leonuraht/cr/gl/nes/src/main.cpp \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
+ /usr/include/bits/stdint-least.h \
+ /home/leonuraht/cr/gl/nes/include/misc/initgl.hpp \
+ /home/leonuraht/cr/gl/nes/include/glad/glad.h \
+ /home/leonuraht/cr/gl/nes/include/KHR/khrplatform.h \
+ /usr/include/GLFW/glfw3.h \
  /home/leonuraht/cr/gl/nes/include/misc/shaders.hpp \
  /usr/include/c++/16/iostream /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
