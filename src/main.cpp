@@ -1,7 +1,6 @@
 #include "misc/cgltf.h"
 #include "misc/initgl.hpp"
 #include "misc/shaders.hpp"
-#include <iostream>
 
 float vertices[] = {
     -0.5f, 0.5f,  0.0f, // Top-left
@@ -31,6 +30,7 @@ int main() {
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), NULL);
   glEnableVertexAttribArray(0);
 
+
   // Shader
   Program program_basic("./src/shaders/vertex_basic.glsl",
                         "./src/shaders/fragment_basic.glsl");
@@ -38,7 +38,7 @@ int main() {
   while (!glfwWindowShouldClose(window)) {
     process_input(window);
 
-    glClearColor(0.2f, 0.3f, 0.5f, 1.f);
+  glClearColor(0.2f, 0.3f, 0.5f, 1.f);
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(program_basic.program);
     glDrawArrays(GL_TRIANGLES, 0, 6);
